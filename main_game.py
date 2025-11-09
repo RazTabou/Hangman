@@ -10,6 +10,7 @@ list_of_words = [
     "dog",
     "avocado",
     "epic"
+    "stone"
 ]
 
 def choose_a_random_word(word_list: list):
@@ -23,4 +24,5 @@ def print_hidden_word(word):
 
 
 if __name__ == '__main__':
+
     print(choose_a_random_word(list_of_words))
