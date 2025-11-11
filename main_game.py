@@ -22,6 +22,11 @@ def choose_a_random_word(word_list: list):
 def print_hidden_word(word):
     ...
 
+def get_input_from_user(letter_from_input: str):
+    letter_from_input = str(input("please enter a letter"))
+    if letter_from_input.isalpha():
+
+
 
 if __name__ == '__main__':
 
