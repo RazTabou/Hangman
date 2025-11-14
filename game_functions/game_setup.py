@@ -8,7 +8,7 @@ import random
 # Write a function that returns a random word from a given word list.
 # The function receives a list of words and returns one random word.
 
-def choose_random_word(word_list):
+def choose_random_word(word_list: list):
     # OP1
     # random.choice(...)
 
@@ -33,7 +33,7 @@ def choose_random_word(word_list):
 #   if we input the word="Armageddon", the set will be {"a", "r", "m", "g", "e", "d", "o", "n"}
 #   if we input the word="Ice Cream", the set will be {"i", "c", "e", "c", "r", "a", "m"}
 
-def initialize_letters_to_be_guessed(word):
+def initialize_letters_to_be_guessed(word:str):
     letters_set = set()
     for letter in word:
         if letter.isalpha():
