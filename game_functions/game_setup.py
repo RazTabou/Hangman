@@ -9,6 +9,7 @@ import random
 # The function receives a list of words and returns one random word.
 
 def choose_random_word(word_list: list):
+    return random.choice(word_list)
     # OP1
     # random.choice(...)
 
@@ -49,7 +50,7 @@ def initialize_letters_to_be_guessed(word:str):
 # Write a function that returns the alphabet as a list/tuple.
 # So if the input is "abcde", the function will return ["a", "b", "c", "d", "e"]
 def initialize_alphabet_display(alphabet: str):
-    ...
+    return list(alphabet)
 
 
 # Test your functions here!
@@ -78,42 +79,42 @@ if __name__ == "__main__":
     # print(result)  # Expected: {"c", "a", "t"}
 
     ###Test 2.2###
-    # result = initialize_letters_to_be_guessed("python")
-    # print(result)  # Expected: {"p", "y", "t", "h", "o", "n"}
+    result = initialize_letters_to_be_guessed("python")
+    print(result)  # Expected: {"p", "y", "t", "h", "o", "n"}
 
-    ###Test 2.3###
-    # result = initialize_letters_to_be_guessed("banana")
-    # print(result)  # Expected: {"b", "a", "n"} (note: no duplicates)
+    ##Test 2.3###
+    result = initialize_letters_to_be_guessed("banana")
+    print(result)  # Expected: {"b", "a", "n"} (note: no duplicates)
 
-    ###Test 2.4###
-    # result = initialize_letters_to_be_guessed("Armageddon")
-    # print(result)  # Expected: {"a", "r", "m", "g", "e", "d", "o", "n"}
+    ##Test 2.4###
+    result = initialize_letters_to_be_guessed("Armageddon")
+    print(result)  # Expected: {"a", "r", "m", "g", "e", "d", "o", "n"}
 
-    ###Test 2.5###
-    # result = initialize_letters_to_be_guessed("Ice Cream")
-    # print(result)  # Expected: {"i", "c", "e", "r", "a", "m"} (no spaces)
+    ##Test 2.5###
+    result = initialize_letters_to_be_guessed("Ice Cream")
+    print(result)  # Expected: {"i", "c", "e", "r", "a", "m"} (no spaces)
 
-    ### --- Test Function 3: initialize_alphabet_display --- ###
+    ## --- Test Function 3: initialize_alphabet_display --- ###
 
-    ###Test 3.1 - English alphabet###
-    # alphabet = "abcdefghijklmnopqrstuvwxyz"
-    # result = initialize_alphabet_display(alphabet)
-    # print(result)  # Expected: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    ##Test 3.1 - English alphabet###
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    result = initialize_alphabet_display(alphabet)
+    print(result)  # Expected: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-    ###Test 3.2 - Short alphabet###
-    # alphabet = "abcdefg"
-    # result = initialize_alphabet_display(alphabet)
-    # print(result)  # Expected: ["a", "b", "c", "d", "e", "f", "g"]
+    ##Test 3.2 - Short alphabet###
+    alphabet = "abcdefg"
+    result = initialize_alphabet_display(alphabet)
+    print(result)  # Expected: ["a", "b", "c", "d", "e", "f", "g"]
 
-    ###Test 3.3 - Hebrew alphabet###
-    # alphabet = "אבגדהוזחטי"
-    # result = initialize_alphabet_display(alphabet)
-    # print(result)  # Expected: ["א", "ב", "ג", "ד", "ה", "ו", "ז", "ח", "ט", "י"]
+    ##Test 3.3 - Hebrew alphabet###
+    alphabet = "אבגדהוזחטי"
+    result = initialize_alphabet_display(alphabet)
+    print(result)  # Expected: ["א", "ב", "ג", "ד", "ה", "ו", "ז", "ח", "ט", "י"]
 
-    ###Test 3.4 - Check return type###
-    # alphabet = "abc"
-    # result = initialize_alphabet_display(alphabet)
-    # print(type(result))  # Expected: <class 'list'> or <class 'tuple'>
+    ##Test 3.4 - Check return type###
+    alphabet = "abc"
+    result = initialize_alphabet_display(alphabet)
+    print(type(result))  # Expected: <class 'list'> or <class 'tuple'>
 
     pass
 
